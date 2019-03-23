@@ -1,1 +1,46 @@
-  Sample text!
+\subsection{Prove that $\sum_{i=1}^{n} i = n(n+1)/2$ for $n \geq 0$, by induction}
+  \textbf{Question number:} 1-10.
+
+  \begin{proof}[Proof by induction]
+
+    For any integer value of $i$, let $P(n)$ denote the statement $P(n) =
+    n(n+1)/2$.
+
+    \textbf{Base step $(n=1)$}
+
+    $P(1) = 1(1+1)/2$
+
+    $P(1) = 1(2)/2$
+
+    $P(1) = 2/2$
+
+    $P(1) = 1$
+
+    Thus, the inductive step is true.
+
+    \textbf{Inductive step}
+    If all of $P(1) + ... + P(n)$ are true, then $P(n+1)$ is true. Let's try to
+    get the value of $P(n+1)$.
+
+    $P(1) + ... + P(n) + P(n+1) = (n+1).((n+1)+1)/2$
+
+    $P(1) + ... + P(n) + P(n+1) = (n+1).(n+2)/2$
+
+    $ P(1) + ... + P(n) + P(n+1) = (n^2 + 2n + 1n + 2)/2$
+
+    $ P(1) + ... + P(n) + P(n+1) = (n^2 + 3n + 2) / 2$
+
+    $ n(n+1)/2 + (n+1) = (n^2 + 3n + 2) / 2$
+
+    $ (n^2 + 1n)/2 + (n+1) = (n^2 + 3n + 2) / 2$
+
+    $ (n^2 + 1n + 2(n+1))/2 = (n^2 + 3n + 2) / 2$
+
+    $ (n^2 + 1n + 2n + 2)/2 = (n^2 + 3n + 2) / 2$
+
+    $ (n^2 + 3n + 2)/2 = (n^2 + 3n + 2) / 2$
+
+    Thus it proves that the equation $n(n+1)/2$ to find the sum of all the
+    integers from $1$ to $n$ is true.
+    \qedhere
+  \end{proof}
