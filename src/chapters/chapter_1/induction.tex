@@ -19,9 +19,26 @@
     \textbf{Inductive step}
     Assume all of $P(1), ..., P(n)$ are true. Then we show that $P(n+1)$ is true as well:
 
-    ...
+    Calculating the value of $P(n+1)$ for left hand side
+    \begin{align}
+      P(n+1) &= P(n) + (n + 1)\\
+             &= (n(n+1)/2) + (n+1)\\
+             &= (n^2+n/2) + (n+1)\\
+             &= ((n^2+n) + 2(n+1))/2\\
+             &= (n^2+n + 2n+2)/2\\
+             &= (n^2+3n+2)/2\\
+    \end{align}
 
-    Thus it proves that the equation $n(n+1)/2$ to find the sum of all the
-    integers from $1$ to $n$ is true.
+    Calculating the value of $\sum_{i=1}^n i$ for right hand side
+    \begin{align}
+      \sum_{i=1}^n i &= ((n+1)((n+1)+1))/2\\
+                     &= (n+1)(n+2)/2\\
+                     &= (n^2+2n+n+2)/2\\
+                     &= (n^2+3n+2)/2\\
+    \end{align}
+
+    Both left hand side and right hand side is equal, thus it proves that the
+    equation $n(n+1)/2$ to find the sum of all the integers from $1$ to $n$ is
+    true.
     \qedhere
   \end{proof}
